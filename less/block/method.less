@@ -1,0 +1,21 @@
+.method {
+  background: @gray-lightest-2;
+  .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__title {
+    .title();
+  }
+
+  &__row {
+    &:extend(.row);
+  }
+
+  &__column {
+    &:extend(.col-lg-4);
+    margin-bottom: 20px;
+  }
+}

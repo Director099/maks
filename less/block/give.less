@@ -1,0 +1,16 @@
+.give {
+  &:extend(.container);
+  .padding-ident();
+
+  &__title {
+    .title();
+  }
+
+  &__row {
+    &:extend(.row);
+  }
+
+  &__column {
+    &:extend(.col-lg-6);
+  }
+}

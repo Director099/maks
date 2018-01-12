@@ -1,0 +1,21 @@
+.about {
+  background: @gray-lightest-2;
+  .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__title {
+    .title();
+  }
+
+  &__row {
+    &:extend(.row);
+    align-items: center;
+  }
+
+  &__column {
+    &:extend(.col-lg-6);
+  }
+}
