@@ -6,12 +6,29 @@
     &:extend(.container);
   }
 
-
   &__title {
     .title();
   }
 
-  .card {
-    margin-bottom: 20px;
+  &__row {
+    &:extend(.row);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__column {
+    &:extend(.col-lg-4);
+    position: relative;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: @transition-time;
+
+    &::after {
+      .dark();
+    }
   }
 }
