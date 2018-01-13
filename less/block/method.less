@@ -10,6 +10,15 @@
     .title();
   }
 
+  &__title-h3 {
+    font-size: @font-size--h4;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
   &__row {
     &:extend(.row);
   }
@@ -17,5 +26,27 @@
   &__column {
     &:extend(.col-lg-4);
     margin-bottom: 20px;
+
+    &:hover {
+      .method__icon {
+        box-shadow: 0 0 0 10px fade(@white, 50%);
+        background-color: @white;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid @white;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    transition: @transition-time;
+
+    .icon {
+      margin: auto;
+    }
   }
 }
