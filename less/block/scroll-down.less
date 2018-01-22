@@ -1,0 +1,61 @@
+.scroll-down {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 10;
+  text-align: center;
+
+  &__arrow {
+    position: relative;
+    animation-name: scroll-down;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      width: 2px;
+      height: 14px;
+      background: #fff;
+    }
+
+    &::after {
+      left: 3px;
+      transform: rotate(40deg);
+    }
+
+    &::before {
+      left: -5px;
+      transform: rotate(-40deg);
+    }
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    top:0px;
+    opacity: 0;
+
+  }
+
+  30% {
+    top:10px;
+    opacity: 1;
+  }
+
+  100% {
+    top:25px;
+    opacity: 0;
+  }
+}

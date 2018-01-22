@@ -1,24 +1,44 @@
-	<div class="write">
+	<div class="write" data-parallax="scroll" data-image-src="img/bg-footer.jpg">
     <div class="write__container">
       <h2 class="write__title">Напишите мне</h2>
       <form class="write-form" action="#">
         <input class="write-form__control" type="text" placeholder="Имя">
         <input class="write-form__control" type="email" placeholder="Email">
-        <input class="write-form__control" type="tel" placeholder="Телефон">
         <textarea class="write-form__control" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+        <button class="write-form__btn btn">Отправить</button>
       </form>
     </div>
   </div>
-  <footer class="page-footer">
+  <footer class="page-footer" id="#programm">
     <div class="page-footer__container">
-      <a>Logo</a>
+      <a class="logo" href="index.html">
+        <span class="logo__name">Ермак Ермаков</span> <span>курсы губной гармоники</span>
+      </a>
+      <p class="copyright">© 2018. Все права защищены</p>
       <p class="social">
-        <a href="">vk</a>
-        <a href="">instagram</a>
-        <a href="">youtube</a>
+        <a class="social__link">
+          <svg class="icon" width="15" height="15">
+            <use xlink:href="#vk"/>
+          </svg>vk
+        </a>
+        <a class="social__link">
+          <svg class="icon" width="15" height="15">
+            <use xlink:href="#im"/>
+          </svg>instagram
+        </a>
+        <a class="social__link">
+          <svg class="icon" width="15" height="15">
+            <use xlink:href="#youtube"/>
+          </svg>youtube
+        </a>
       </p>
     </div>
 	</footer>
 	<script src="js/script.js"></script>
+  <!-- HelloPreload http://hello-site.ru/preloader/ -->
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #22313F url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;background-size:41px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
 </body>
 </html>

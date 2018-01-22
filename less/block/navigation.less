@@ -12,7 +12,23 @@
     padding: 0 15px;
 
     a {
+      position: relative;
       color: @white;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background: @white;
+        transition: @transition-time;
+      }
+    }
+
+    &:hover a::after {
+      width: 100%;
     }
   }
 }

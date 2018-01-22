@@ -2,8 +2,9 @@
   &:extend(.col-lg-6);
 
   &__form {
+    border-radius: @border-radius;
     padding: 20px;
-    max-width: 430px;
+    max-width: 400px;
     margin-left: auto;
     background: fade(@black, 50%);
   }
@@ -12,8 +13,24 @@
     display: block;
     width: 100%;
     padding: 10px 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius: @border-radius;
     border: none;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: @color-danger;
+    border: none;
+    border-radius: @border-radius;
+    padding: 10px 15px;
+    color: @white;
+
+    &:hover {
+      background: @color-btn--hover;
+      color: @white;
+    }
   }
 }

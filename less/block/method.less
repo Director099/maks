@@ -1,21 +1,26 @@
 .method {
-  background: @gray-lightest-2;
+  position: relative;
   .padding-ident();
 
   &__container {
     &:extend(.container);
+    position: relative;
+    z-index: 9;
   }
 
   &__title {
     .title();
+    color: @white;
   }
 
   &__title-h3 {
+    color: @white;
     font-size: @font-size--h4;
     text-align: center;
   }
 
   &__text {
+    color: @white;
     text-align: center;
   }
 
@@ -25,12 +30,12 @@
 
   &__column {
     &:extend(.col-lg-4);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
     &:hover {
       .method__icon {
         box-shadow: 0 0 0 10px fade(@white, 50%);
-        background-color: @white;
+        // background-color: @white;
       }
     }
   }
@@ -47,6 +52,12 @@
 
     .icon {
       margin: auto;
+      fill: @white;
     }
+  }
+
+  &::after {
+    .dark();
+    background: fade(@black, 70%)
   }
 }

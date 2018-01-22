@@ -1,6 +1,9 @@
 .give {
-  &:extend(.container);
   .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
 
   &__title {
     .title();
