@@ -1,9 +1,22 @@
 'use strict';
 
+window.onload = function(evt) {
+  var preloader = document.querySelector('#preloader');
+
+  preloader.classList.add('close');
+
+  setTimeout(function() {
+    preloader.classList.add('close');
+    if (preloader.classList.contains('close')) {
+      preloader.style.display = 'none';
+    }
+  }, 1000);
+}
+
 $(function () {
-    $.scrollUp({
-        scrollText: '',
-    });
+  $.scrollUp({
+      scrollText: '',
+  });
 });
 
 var wow = new WOW({
@@ -27,3 +40,5 @@ function scroll(item) {
 
 scroll(nav);
 scroll(down);
+
+// Плавный скол с навигации
