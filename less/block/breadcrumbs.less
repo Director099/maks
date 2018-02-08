@@ -1,0 +1,24 @@
+.breadcrumbs {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 2rem;
+  color: @gray-darkest;
+
+  &__item {
+    display: inline-block;
+    margin-right: .6em;
+    white-space: nowrap;
+
+    a {
+      color: @gray-darkest;
+      text-decoration: none;
+    }
+
+    &:not(:last-child)::after {
+      content: '/';
+      display: inline-block;
+      margin-left: .8rem;
+      color: gray;
+    }
+  }
+}

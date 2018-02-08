@@ -1,0 +1,17 @@
+.pagination {
+  justify-content: center;
+  margin-bottom: 0;
+
+  &__item {
+    &:extend(.page-item);
+  }
+
+  &__link {
+    &:extend(.page-link);
+    color: @black;
+
+    &:hover {
+      color: @color-danger;
+    }
+  }
+}

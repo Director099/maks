@@ -1,15 +1,23 @@
 .navigation {
-
+  // width: 100%;
 
   &__list {
     display: flex;
+    flex-direction: column;
+    text-align: right;
     padding: 0;
-    margin: 0;
+    margin: 15px 0;
     list-style-type: none;
+
+    @media(min-width: @screen-lg) {
+      flex-direction: row;
+      text-align: left;
+      margin: 0px 0 0 0;
+    }
   }
 
   &__item {
-    padding: 0 15px;
+    padding: 10px 0px;
 
     a {
       position: relative;
@@ -30,5 +38,24 @@
     &:hover a::after {
       width: 100%;
     }
+
+    @media(min-width: @screen-lg) {
+      padding: 0 15px;
+    }
+  }
+
+  &__call {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+    @media(min-width: @screen-sm) {
+      display: none;
+    }
+  }
+
+  @media(min-width: @screen-lg) {
+    width: auto;
   }
 }

@@ -24,9 +24,15 @@ var wow = new WOW({
 });
 wow.init();
 
+var toggleMenu = document.querySelector('.toggle-menu');
+
+toggleMenu.addEventListener('click', function() {
+  toggleMenu.classList.toggle('toggle-menu--close');
+})
+
 // Плавный скол с навигации
 
-var nav = $(".navigation__item > a");
+var nav = $(".navigation__item--scroll > a");
 var down = $(".scroll-down");
 
 function scroll(item) {

@@ -1,12 +1,25 @@
 .application {
   &:extend(.col-lg-6);
 
+  &__title {
+    text-align: center;
+
+    @media(min-width: @screen-lg) {
+      text-align: left;
+    }
+  }
+
   &__form {
     border-radius: @border-radius;
     padding: 20px;
     max-width: 400px;
     margin-left: auto;
+    margin-right: auto;
     background: fade(@black, 50%);
+
+    @media(min-width: @screen-lg) {
+      margin-right: initial;
+    }
   }
 
   &__control {

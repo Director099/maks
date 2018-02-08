@@ -76,8 +76,8 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Оставьте заявку</h5>
+        <div class="modal-content__header">
+          <h5 class="modal-content__title" id="exampleModalLabel">Оставьте заявку</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -91,43 +91,49 @@
       </div>
     </div>
   </div>
-  <div class="fullpage" data-parallax="scroll" data-image-src="img/header-bg.png">
+  <div class="fullpage">
   	<div class="fullpage__container">
-      <header class="page-header">
+      <header class="page-header navbar-expand-lg ">
         <a class="logo" href="index.html">
           <span class="logo__name">Ермак Ермаков</span> <span>курсы губной гармоники</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <ul class="callback">
+          <li class="callback__item">
+            <a class="callback__number" href="#">8 (800) 555 55 55</a>
+          </li>
+          <li class="callback__item">
+            <button class="callback__cb" data-toggle="modal" data-target="#exampleModal">Обратный звонок</button>
+          </li>
+        </ul>
+        <button class="toggle-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span>Закрыть</span>
         </button>
-        <div class="navbar navbar-expand-lg">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a href="#teacher">Об учителе</a></li>
-                <li class="navigation__item"><a href="#programm">Курсы</a></li>
-                <li class="navigation__item"><a href="#">Скринкасты</a></li>
-                <li class="navigation__item"><a href="#">Блог</a></li>
-                <li class="navigation__item"><a href="#">Продукция</a></li>
-              </ul>
-            </nav>
-            <ul class="callback">
-              <li class="callback__item">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--scroll"><a href="#teacher">Об учителе</a></li>
+              <li class="navigation__item navigation__item--scroll"><a href="#programm">Курсы</a></li>
+              <li class="navigation__item"><a href="page-video.html">Скринкасты</a></li>
+              <li class="navigation__item"><a href="archive.html">Блог</a></li>
+              <li class="navigation__item"><a href="production.html">Продукция</a></li>
+            </ul>
+            <ul class="navigation__call">
+              <li>
                 <a class="callback__number" href="#">8 (800) 555 55 55</a>
               </li>
-              <li class="callback__item">
+              <li>
                 <button class="callback__cb" data-toggle="modal" data-target="#exampleModal">Обратный звонок</button>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
       <div class="main-block">
         <div class="main-block__row">
           <section class="main-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
             <h1 class="main-title__title">Курсы губной гармоники Ермакова Ермака</h1>
-            <!-- <p>Уроки без нудных упражнении</p>
-            <a class="btn" href="#">Канал на youtube</a> -->
+            <p class="main-title__text">Уроки без нудных упражнении и теории, только практика и умение продвигать самого себя</p>
+            <!-- <a class="btn" href="#">Канал на youtube</a> -->
           </section>
           <div class="application wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
             <form class="application__form" action="">

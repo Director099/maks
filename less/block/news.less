@@ -1,0 +1,38 @@
+.news {
+  box-shadow: 0px 3px 7px 2px fade(@black, 24%);
+  margin-bottom: 30px;
+
+  &__img {
+    max-height: 120px;
+    overflow: hidden;
+  }
+
+  &__title-block {
+    display: block;
+    color: @white;
+    background: @gray-darken;
+    cursor: pointer;
+    font-size: @font-size--h5;
+    padding: 10px 15px;
+
+    &:hover {
+      color: @white;
+    }
+  }
+
+  &__text {
+    max-height: 120px;
+    overflow: hidden;
+    padding: 10px 15px;
+  }
+
+  &__title {
+    font-size: @font-size--h5;
+    margin-bottom: 0;
+    height: 37px;
+  }
+
+  .btn {
+    margin: 15px;
+  }
+}

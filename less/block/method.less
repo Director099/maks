@@ -1,5 +1,8 @@
 .method {
   position: relative;
+  background: url('img/lessen.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
   .padding-ident();
 
   &__container {
@@ -31,6 +34,10 @@
   &__column {
     &:extend(.col-lg-4);
     margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:hover {
       .method__icon {

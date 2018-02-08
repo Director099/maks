@@ -1,0 +1,52 @@
+.video-link {
+  display: block;
+  margin-bottom: 30px;
+
+  &__img {
+    position: relative;
+    transition: @transition-time;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: @transition-time;
+      background: fade(@black, 50%);
+    }
+
+    &:hover::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50px;
+      height: 36px;
+      transform: translate(-50%,-50%);
+      background: url("img/sprite/play.svg") no-repeat center;
+    }
+
+    &:hover::before {
+      opacity: .8;
+    }
+  }
+
+  &__title {
+    font-size: @font-size--h4;
+    margin: 10px 0;
+    color: @black;
+    transition: @transition-time;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__time {
+    color: @gray-light;
+  }
+
+}

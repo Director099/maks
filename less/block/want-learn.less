@@ -1,0 +1,34 @@
+.want-learn {
+  background: @gray-darker;
+  .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__row {
+    &:extend(.row);
+    align-items: center;
+  }
+
+  &__column {
+    &:extend(.col-lg-6);
+
+    .btn {
+      display: block;
+      max-width: 300px;
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    font-size: @font-size--h2;
+    color: @white;
+  }
+
+  &__text {
+    color: @white;
+    margin-bottom: 0;
+  }
+}

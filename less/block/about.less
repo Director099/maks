@@ -16,5 +16,13 @@
 
   &__column {
     &:extend(.col-lg-6);
+
+    &:first-child {
+      margin-bottom: 20px;
+
+      @media(min-width: @screen-lg) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
