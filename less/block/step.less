@@ -27,19 +27,25 @@
       position: absolute;
       right: 0;
       top: 50%;
-      height: 16px;
+      // height: 16px;
       width: 2px;
       transform: translateY(-50%);
       background: @color-danger;
+      transition: @transition-time;
     }
 
     &::after {
       top: 4px;
       transform: rotate(90deg);
+      height: 16px;
     }
 
     &::before {
-      // width: 16px;
+      height: 0;
+    }
+
+    &.collapsed::before {
+      height: 16px;
     }
   }
 

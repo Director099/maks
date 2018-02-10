@@ -43,4 +43,30 @@
     text-align: center;
     font-size: @font-size--h3;
   }
+
+  &__table {
+    // display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0rem;
+    overflow-x: auto;
+    background-color: transparent;
+
+    td {
+      padding: .75rem;
+      vertical-align: top;
+      border-top: 1px solid @gray-lightest;
+    }
+
+    th {
+      padding: .75rem;
+      vertical-align: top;
+      background: @white;
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: rgba(0,0,0,.05);
+    }
+  }
 }
