@@ -11,6 +11,15 @@
 
     .icon {
       fill: @white;
+      transition: @transition-time;
+    }
+
+    &:hover {
+      // border: 1px solid @white;
+
+      .icon {
+        fill: @color-danger;
+      }
     }
   }
 }

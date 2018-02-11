@@ -21,7 +21,7 @@
         <h2 class="step__title">Программа</h2>
         <div class="step__block">
           <section class="step__section">
-            <h3 class="step__title-h3" data-toggle="collapse" data-target="#col-1">
+            <h3 class="step__title-h3 collapsed" data-toggle="collapse" data-target="#col-1">
               Введение
             </h3>
           </section>
@@ -33,7 +33,7 @@
         </div>
         <div class="step__block">
           <section class="step__section">
-            <h3 class="step__title-h3" data-toggle="collapse" data-target="#col-2">
+            <h3 class="step__title-h3 collapsed" data-toggle="collapse" data-target="#col-2">
               Упражнения
             </h3>
           </section>
@@ -45,7 +45,7 @@
         </div>
         <div class="step__block">
           <section class="step__section">
-            <h3 class="step__title-h3" data-toggle="collapse" data-target="#col-3">
+            <h3 class="step__title-h3 collapsed" data-toggle="collapse" data-target="#col-3">
               Теория
             </h3>
           </section>
@@ -57,7 +57,7 @@
         </div>
         <div class="step__block">
           <section class="step__section">
-            <h3 class="step__title-h3" data-toggle="collapse" data-target="#col-4">
+            <h3 class="step__title-h3 collapsed" data-toggle="collapse" data-target="#col-4">
               Практика
             </h3>
           </section>
@@ -69,7 +69,7 @@
         </div>
         <div class="step__block">
           <section class="step__section">
-            <h3 class="step__title-h3" data-toggle="collapse" data-target="#col-5">
+            <h3 class="step__title-h3 collapsed" data-toggle="collapse" data-target="#col-5">
               Выступление
             </h3>
           </section>
@@ -81,7 +81,7 @@
         </div>
         <div class="step__block">
           <section class="step__section">
-            <h3 class="step__title-h3" data-toggle="collapse" data-target="#col-6">
+            <h3 class="step__title-h3 collapsed" data-toggle="collapse" data-target="#col-6">
               Сцена
             </h3>
           </section>
@@ -92,11 +92,14 @@
           </div>
         </div>
       </div>
-      <!-- <div class="price">
-        <strong class="price__course">14500 р.</strong>
-        <button class="btn">Записаться на курс</button>
-      </div> -->
+      <div class="price">
+        <strong class="price__course">14500
+          <svg class="icon" width="25" height="25">
+            <use xlink:href="#ruble"/>
+          </svg>
+        </strong>
+      </div>
     </div>
   </main>
-<!-- @@include('_include/form-pages.html') -->
+@@include('_include/record-course.html')
 @@include('_include/footer.html')

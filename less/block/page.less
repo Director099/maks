@@ -21,6 +21,17 @@
     margin-bottom: 20px;
   }
 
+  &__img-fluid {
+    .img-fluid();
+    margin: 0 auto 20px;
+
+    @media(min-width: @screen-lg) {
+      margin-right: auto;
+      margin-left: initial;
+      margin-bottom: 0;
+    }
+  }
+
   &__video {
     position: relative;
     width: 100%;
@@ -45,7 +56,7 @@
   }
 
   &__table {
-    // display: block;
+    display: block;
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
@@ -67,6 +78,10 @@
 
     tr:nth-of-type(odd) {
       background-color: rgba(0,0,0,.05);
+    }
+
+    @media(min-width: @screen-sm) {
+      display: table;
     }
   }
 }

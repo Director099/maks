@@ -12,13 +12,23 @@
   }
 
   &__column {
-    &:extend(.col-lg-6);
+    &:extend(.col-md-6);
+    text-align: center;
 
     .btn {
       display: block;
       max-width: 300px;
       width: 100%;
-      margin-left: auto;
+      margin: 0 auto;
+
+      @media(min-width: @screen-md) {
+        margin-left: auto;
+        margin-right: initial;
+      }
+    }
+
+    @media(min-width: @screen-md) {
+      text-align: left;
     }
   }
 
@@ -29,6 +39,18 @@
 
   &__text {
     color: @white;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+
+    &--price {
+      font-size: @fz-price;
+
+      .icon {
+        fill: @white;
+      }
+    }
+
+    @media(min-width: @screen-md) {
+      margin-bottom: 0px;
+    }
   }
 }
